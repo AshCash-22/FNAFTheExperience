@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FNAF The Experience</title>
+    <link rel="shortcut icon" type="image/png" href="images/fredhead.png"
+  </head>
+
+  <body>
+    <div id="full-gif" class="hide fullscreen-gif">
+      <img src="images/jump1.gif" />
+    </div>
+    <div id="goldGIF" class="hide fullscreen-gif">
+      <img src="images/goldenfreddy.gif" />
+    </div>
+
+    <div class="top-row">
+      <div class="arrows">
+        <img
+          src="images/leftarrow.png"
+          id="left"
+          class="hide clickable3"
+          onclick="goBack(); playSound('click')"
+        />
+      </div>
+
+      <div class="FNAF-logo center-content">
+        <img
+          src="images/fnaf.logo.png"
+          class="clickable2"
+          onclick="logoClicked();"
+        />
+      </div>
+
+      <div class="arrows">
+        <img
+          src="images/rightarrow.png"
+          class="clickable3"
+          onclick="playSound('click'); switchBody();"
+        />
+      </div>
+    </div>
+    <div class="bottom-row">
+      <!-- LEFT SIDE -->
+      <div class="info-photo1">
+        <div class="photos">
+          <img
+            src="images/freddy.png"
+            id="bear"
+            class="clickable1"
+            onclick="playSound('frsound'); fredText()"
+          />
+
+          <img
+            src="images/foxy.png"
+            id="fox"
+            class="clickable1 hide"
+            onclick="playSound('fsound'); foxText()"
+          />
+        </div>
+        <div class="info-box">
+          <p class="hide" id="text1">
+            Freddy Fazbear is the main character for the Five Nights at Freddy’s
+            franchise (hence the name). Freddy is an animatronic bear and the
+            star attraction of the original Freddy Fazbear's Pizza, opened in
+            1983, as well as the face and namesake of the company that owns it.
+            Freddy is heavily implied to be possessed by the restless spirit of
+            Gabriel, a little boy murdered by William Afton.
+          </p>
+          <p class="hide" id="text3">
+            Foxy the Pirate, also known as Foxy, is one of the four original
+            animatronics of Freddy Fazbear's Pizza and a major antagonist in the
+            Five Nights at Freddy's series. Foxy is a discontinued animatronic
+            pirate fox entertainer. He resides at his own separate stage in the
+            pizzeria. Undisclosed to Fazbear Entertainment, Inc. and the public.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-photo2">
+        <div class="photos">
+          <img
+            src="images/bonnie.png"
+            id="bunny"
+            class="clickable1"
+            onclick="playSound('bsound'); bonText()"
+          />
+          <img
+            src="images/chica.png"
+            id="chick"
+            class="clickable1 hide"
+            onclick="playSound('csound'); chickText()"
+          />
+        </div>
+        <div class="info-box">
+          <p class="hide" id="text2">
+            Bonnie the Rabbit is one of the four original animatronics of Freddy
+            Fazbear's Pizza. Bonnie is an animatronic rabbit and the guitarist
+            in Freddy's band, positioned on the left side of the stage. At
+            Fazbear Entertainment, Inc. and the public, Bonnie is heavily
+            implied to be possessed by the restless spirit of Jeremy, a little
+            boy murdered by William Afton. Due to this, he and the others are
+            now seeking revenge against their killer by attacking any adults in
+            the pizzeria after hours in a blind rage.
+          </p>
+          <p class="hide" id="text4">
+            Chica the Chicken, also known as Chica, is one of the four original
+            animatronics of Freddy Fazbear's Pizza and a major antagonist in the
+            Five Nights at Freddy's series. Chica is an animatronic chicken and
+            the backup singer in Freddy's band, positioned at the right side of
+            the stage. Undisclosed to Fazbear Entertainment, Inc. and the
+            public, Chica is possessed by the restless spirit of Susie – a
+            little girl murdered by William Afton.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <audio src="sounds/fnafsound.mp3" id="my-click"></audio>
+    <audio src="sounds/jumpsound.mp3" id="gsound"></audio>
+    <audio src="sounds/bonniesound.mp3" id="bsound"></audio>
+    <audio src="sounds/chicksound.mp3" id="csound"></audio>
+    <audio src="sounds/foxsound.mp3" id="fsound"></audio>
+    <audio src="sounds/fredlaugh.mp3" id="frsound"></audio>
+    <audio src="sounds/click.wav" id="click"></audio>
+    <audio src="sounds/goldsound.mp3" id="goldSound"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
