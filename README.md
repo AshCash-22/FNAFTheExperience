@@ -7,7 +7,7 @@ This project is my first front-end website built with **HTML**, **CSS**, and **J
 - Tablet and Mobile-friendly
 
 ## Process and Documentation
-- **Iteration History:** See 'Iteration-Process-Slides.pdf'
-- **UX Testing:**- Conducted UX testing with 5 peers- see 'SuperFan-Process Slides.pdf'
+- **Iteration History:** See ' Iteration-Process-Slides.pdf'
+- **UX Testing:**- Conducted UX testing with 5 peers- see 'UX-Testing Slides.pdf'
  
 
