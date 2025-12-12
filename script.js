@@ -33,23 +33,19 @@ function chickText() {
 }
 
 function switchBody() {
-  const foxyVisible = !document
-    .getElementById("fox")
-    .classList.contains("hide");
-  const chicaVisible = !document
-    .getElementById("chick")
-    .classList.contains("hide");
-  document.getElementById("left").classList.remove("hide");
-
-  if (!foxyVisible && !chicaVisible) {
+  if (document.getElementById("fox").classList.contains("hide") == true) {
+    //if foxy is hidden, run these lines
     document.getElementById("bear").classList.add("hide");
     document.getElementById("bunny").classList.add("hide");
     document.getElementById("text1").classList.add("hide");
     document.getElementById("text2").classList.add("hide");
     document.getElementById("fox").classList.remove("hide");
     document.getElementById("chick").classList.remove("hide");
-  } else if (foxyVisible && chicaVisible) {
-    // ⬅️ this is your second changed IF
+    document.getElementById("left").classList.remove("hide");
+  } else if (
+    document.getElementById("fox").classList.contains("hide") == false
+  ) {
+    //if foxy is hidden, run these lines
     showFullGif();
   }
 }
@@ -95,6 +91,7 @@ let logoClicks = 0;
 
 function logoClicked() {
   logoClicks++;
+  console.log(logoClicks);
 
   if (logoClicks >= logoClickGoal) {
     // reset for next time
